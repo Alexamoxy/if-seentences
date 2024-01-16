@@ -21,7 +21,7 @@ function getFormattedWord(word) {
   );
 
   if (formatOption === null) {
-    return null; // User clicked Cancel
+    return null;
   }
 
   switch (formatOption.toLowerCase()) {
@@ -38,7 +38,6 @@ function main() {
   const userInput = getUserInput();
 
   if (userInput === null) {
-    // User clicked Cancel on the initial prompt
     return;
   }
 
@@ -53,7 +52,6 @@ function main() {
     const formattedWord = getFormattedWord(word);
 
     if (formattedWord === null) {
-      // User clicked Cancel during word formatting
       return;
     }
 
